@@ -18,7 +18,7 @@ const toHTML = fruit => `
  `;
 
 function render() {
-  const html = fruits.map(toHTML);
+  const html = fruits.map(toHTML).join('');
   document.getElementById('fruits').innerHTML = html;
 }
 
